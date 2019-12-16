@@ -13,8 +13,8 @@
     let whatever = "hello world!!!";
     alert(whatever);
     // your code here
+    var varHi = "Hello, World!";
+    alert(varHi);
 
 })();
 
-var varHi = "Hello, World!";
-alert(varHi);
