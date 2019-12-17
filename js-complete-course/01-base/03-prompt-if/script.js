@@ -11,6 +11,17 @@
 
 (function() {
 
-  // your code here
+
+    var person = confirm("Do you want some cake?", "No No No");
+
+    if (person) {
+
+        window.confirm ("confragulations")
+
+    } else { confirm("Fine, More cake for me then!")
+
+    }
+
+
 
 })();
