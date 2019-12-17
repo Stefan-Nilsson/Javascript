@@ -12,8 +12,32 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("addition").addEventListener("click", function() {
-        // perform an addition
+
+
+    document.getElementById("addition").addEventListener("click", function()
+    {
+
+
+        function test1 (operatorOne) {
+            document.getElementById("op-one").value = operatorOne;
+        }
+        function test2 (operatorTwo) {
+            document.getElementById("op-two").value = operatorTwo;
+        }
+
+        alert(test1("return")
+
+
+
+
+
+
+        function calculate (Number{(document.getElementById("op-one").value),
+            Number (document.getElementById("op-two").value);}
+        {
+        return Number(document.getElementById("op-one").value)
+            + Number (document.getElementById("op-two").value); }
+
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
@@ -27,4 +51,10 @@
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
     });
+
+
+
+
+
+
 })();
