@@ -13,22 +13,14 @@
 
 
     var age = prompt("What's your age?", "Don't lie!");
-    var number = Number(age);
+    var number = Number(age) + 2;
     var gender = prompt("With what gender do you identify?", "Anything is possible");
-    console.log(gender);
+
     var location = prompt("Where do you live?", "I won't stalk you!(or maybe I will)");
 
-    var troll = confirm(`Your age is: ${number + 2},\nyour gender identity is: ${gender}\nand your bathroom with soon to be installed camera's\n is located near: ${location}.`);
+    var troll = confirm(`Your age is: ${number},\nyour gender identity is: ${gender}\nand your bathroom with soon to be installed camera's\n is located near: ${location}.\npress ok if correct\npress cancel if you want to fill in the form again.`);
 
-    if (person) {
-
-        window.confirm("confragulations")
-
-    } else {
-        confirm("Fine, More cake for me then!")
-
-    }
-
+if (troll != true) {self.location = self.location;}
 
 })();
 
