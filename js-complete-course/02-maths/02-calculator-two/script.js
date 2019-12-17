@@ -11,30 +11,20 @@
 
 
 
-switch (stefan) {
-    case 'addition':
-        document.getElementById("addition").addEventListener("click", function() {
+var operatorOne =  Number(document.getElementById("op-one").value);
+var operatorTwo = Number(document.getElementById("op-two").value);
 
-            alert(Number(document.getElementById('op-one'.value)) + Number(document.getElementById('op-two'.value)))
-        }
-        break;
-        /*
-    case 'Apples':
-        console.log('Apples are $0.32 a pound.');
-        break;
-    case 'Bananas':
-        console.log('Bananas are $0.48 a pound.');
-        break;
-    case 'Cherries':
-        console.log('Cherries are $3.00 a pound.');
-        break;
-    case 'Mangoes':
-    case 'Papayas':
-        console.log('Mangoes and papayas are $2.79 a pound.');
-        break;
-    default:
-        console.log('Sorry, we are out of ' + expr + '.');
+
+
+function calc (calculationTypeIs) {
+    switch (calculationTypeIs) {
+        case 'addition': alert(operatorOne + operatorTwo);
+            break;
+        case 'substraction': alert(operatorOne - operatorTwo);
+            break;
+        case 'multiplication': alert(operatorOne * operatorTwo);
+            break;
+        case 'division': alert(operatorOne / operatorTwo);
+        default: break;
 }
-
-console.log("Is there anything else you'd like?");*/
 }
