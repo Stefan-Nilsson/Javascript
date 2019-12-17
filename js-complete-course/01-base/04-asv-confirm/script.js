@@ -12,56 +12,29 @@
 (function () {
 
 
-
     var age = prompt("What's your age?", "Don't lie!");
+    var number = Number(age);
+    var gender = prompt("With what gender do you identify?", "Anything is possible");
+    console.log(gender);
+    var location = prompt("Where do you live?", "I won't stalk you!(or maybe I will)");
 
-    /* if (age) {
-
-        window.confirm ("confragulations")
-
-    } else { confirm("Fine, More cake for me then!")
-
-    }
-
-*/
-
-})();
-
-
-(function () {
-    var age = prompt("What's your age?", "Don't lie!");
-
-})();
-
-
-/*
-
-(function() {
-
-
-    var person = confirm("Do you want some cake?", "No No No");
+    var troll = confirm(`Your age is: ${number + 2},\nyour gender identity is: ${gender}\nand your bathroom with soon to be installed camera's\n is located near: ${location}.`);
 
     if (person) {
 
-        window.confirm ("confragulations")
+        window.confirm("confragulations")
 
-    } else { confirm("Fine, More cake for me then!")
+    } else {
+        confirm("Fine, More cake for me then!")
 
     }
 
+
 })();
-
-*/
-
-
-
-
-
 
 
 /*
 
-Ask three questions to the user: his/her Age, Gender, and the Town where he/she lives.
 Display the collected responses in a <em>dialog box</em> and ask to confirm.
 If not confirmed, <strong>re-run the process
 
