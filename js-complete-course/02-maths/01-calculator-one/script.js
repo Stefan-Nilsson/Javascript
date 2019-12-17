@@ -17,8 +17,33 @@
     document.getElementById("addition").addEventListener("click", function()
     {
 
+        alert(Number(document.getElementById("op-one").value) + Number(document.getElementById("op-two").value))
 
-        function test1 (operatorOne) {
+
+    });
+
+    document.getElementById("substraction").addEventListener("click", function() {
+        // perform an substraction
+        alert(Number(document.getElementById("op-one").value) - Number(document.getElementById("op-two").value))
+    });
+
+    document.getElementById("multiplication").addEventListener("click", function() {
+        // perform an multiplication
+        alert(Number(document.getElementById("op-one").value) * Number(document.getElementById("op-two").value))
+    });
+
+    document.getElementById("division").addEventListener("click", function() {
+        // perform an division
+        alert(Number(document.getElementById("op-one").value) / Number(document.getElementById("op-two").value))
+    });
+
+
+
+/*     trying to make my own function scribbles, not really important
+
+
+
+function test1 (operatorOne) {
             document.getElementById("op-one").value = operatorOne;
         }
         function test2 (operatorTwo) {
@@ -36,25 +61,7 @@
             Number (document.getElementById("op-two").value);}
         {
         return Number(document.getElementById("op-one").value)
-            + Number (document.getElementById("op-two").value); }
-
-    });
-
-    document.getElementById("substraction").addEventListener("click", function() {
-        // perform an substraction
-    });
-
-    document.getElementById("multiplication").addEventListener("click", function() {
-        // perform an multiplication
-    });
-
-    document.getElementById("division").addEventListener("click", function() {
-        // perform an division
-    });
-
-
-
-
+            + Number (document.getElementById("op-two").value); } */
 
 
 })();
