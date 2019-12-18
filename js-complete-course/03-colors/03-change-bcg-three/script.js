@@ -11,6 +11,21 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+
+
+
+       // document.body.style.background =
+        // Random string generator
+
+            var a = Math.floor(Math.random() * 255);
+            var b = Math.floor(Math.random() * 255);
+            var c = Math.floor(Math.random() * 255);
+
+            document.body.style.background = (a)(",")(b)(",")(c);
+            
+            console.log((a)(",")(b)(",")(c));
+
+    });
 
 })();
