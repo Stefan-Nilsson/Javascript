@@ -19,23 +19,38 @@
 
  Iets in de aard van:
 (hier jaartal waarin de code moet werken)
-
- for (i=1;i=12;i++) {
-   if (i=5 && i=13) {
-    alert("ITS FRIDAY BABY")
-
-
-
- }
  */
 
 
-/*
-When you click the button,
-display each month of the specified year
-that has a Friday 13th.
- */
+    document.getElementById("run").addEventListener("click",function () {
 
 
-  // niet op letten  for (i=1;i<=31;i++) {
+        const current = new Date();
+        let currentDay = current.getDay();
+        let currentDate = current.getDate();
+        let currentMonth = current.getMonth();
+        let chosenYear = (document.getElementById("year"));
+
+        if (chosenYear) {
+            for (chosenYear; chosenYear; chosenYear) {
+                for (currentMonth = 1; currentMonth === 12; currentMonth++) {
+                    if ((currentDay = 5) && (currentDate = 13)) {
+                        alert("ITS FRIDAY BABY")
+                    }
+                }
+
+            }
+
+
+            /*
+            When you click the button,
+            display each month of the specified year
+            that has a Friday 13th.
+             */
+
+
+            // niet op letten  for (i=1;i<=31;i++) {
+
+        }
+    })
 })();
