@@ -22,9 +22,9 @@
             var b = Math.floor(Math.random() * 255);
             var c = Math.floor(Math.random() * 255);
 
-            document.body.style.background = (a)(",")(b)(",")(c);
+           // document.body.style.background = (a","b","c);
             
-            console.log(a(",")b(",")c);
+            console.log( a, ",", b, ",", c );
 
     });
 
