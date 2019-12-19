@@ -17,13 +17,38 @@
         const event = new Date('2019');
 
         event.setFullYear(document.getElementById("year").value);
-        event.setMonth(1);
-        event.setDate(1);
+        event.setMonth(0);
+        event.setDate(13);
+        let varYear = event.getFullYear();
+        let varMonth = event.getMonth();
+        let varDate = event.getDate();
+        let varDay = event.getDay();
+
+        let varMonthChanger = event.setMonth(varMonth++);
+
+        for (varMonth === 1; varMonth ===12; varMonth++) {
+
+            if (varDay === 5) {alert("ITS FRIDAY")}
+
+
+
+
+
+        }
+
+
+
+
+
 
         console.log(event.getFullYear());
         console.log(event.getDay());
         console.log(event.getMonth());
         console.log(event.getDate());
+
+
+
+
 
 
     })
