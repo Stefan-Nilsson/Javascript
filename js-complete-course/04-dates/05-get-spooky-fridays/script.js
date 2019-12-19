@@ -14,8 +14,17 @@
 
     document.getElementById("run").addEventListener("click",function () {
 
-        const event = new Date(document.getElementById("year"));
-        console.log(event)
+        const event = new Date('2019');
+
+        event.setFullYear(document.getElementById("year").value);
+
+        console.log(event.getFullYear());
+// expected output: 1969
+
+        event.setFullYear(0);
+
+        console.log(event.getFullYear());
+// expected output: 0
 
 
 
@@ -86,4 +95,6 @@ niet op letten  for (i=1;i<=31;i++) {
 
 }
 
+      const event = new Date(document.getElementById("year"));
+        console.log(event)
  */
