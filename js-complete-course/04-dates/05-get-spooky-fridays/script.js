@@ -25,7 +25,9 @@
     document.getElementById("run").addEventListener("click",function () {
 
 
-        let chosenYear = (document.getElementById("year"));
+        let chosenYear;
+        chosenYear = (document.getElementById("year").value);
+        new Date(chosenYear);
         let currentDay = chosenYear.getDay();
         let currentDate = chosenYear.getDate();
         let currentMonth = chosenYear.getMonth();
