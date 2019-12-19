@@ -20,11 +20,14 @@
         let a = Math.floor(Math.random() * 255);
         let b = Math.floor(Math.random() * 255);
         let c = Math.floor(Math.random() * 255);
-        Number(a);
-        Number(b);
-        Number(c);
+        // Number(a);
+        // Number(b);
+        // Number(c);
 
-        document.body.style.background = ( a, ",", b, ",", c );
+        var allVars = "rgb(" + (a) + ", " + (b) + ", " + (c);
+
+
+        document.body.style.background = allVars;
 
 
         // console.log( a, ",", b, ",", c ); (a, b, c)
