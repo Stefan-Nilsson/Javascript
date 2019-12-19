@@ -9,22 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     document.getElementById("run").addEventListener("click", function () {
 
 
-
-       // document.body.style.background =
+        // document.body.style.background =
         // Random string generator
 
-            var a = Math.floor(Math.random() * 255);
-            var b = Math.floor(Math.random() * 255);
-            var c = Math.floor(Math.random() * 255);
+        let a = Math.floor(Math.random() * 255);
+        let b = Math.floor(Math.random() * 255);
+        let c = Math.floor(Math.random() * 255);
+        Number(a);
+        Number(b);
+        Number(c);
 
-           // document.body.style.background = (a","b","c);
-            
-            console.log( a, ",", b, ",", c );
+        document.body.style.background = ( a, ",", b, ",", c );
+
+
+        // console.log( a, ",", b, ",", c ); (a, b, c)
 
     });
 
