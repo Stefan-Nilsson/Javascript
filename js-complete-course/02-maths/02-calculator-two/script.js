@@ -21,8 +21,7 @@
 // FIFTH getElementById looks for the id inside the document called whatever's inside the ("tralalala")
 // SIXTH .value looks for the value of the Id for which you looked
 
-var operatorOne = Number(document.getElementById("op-one").value);
-var operatorTwo = Number(document.getElementById("op-two").value);
+
 
 // Here I create a function that uses a switch case
 //
@@ -33,7 +32,10 @@ var operatorTwo = Number(document.getElementById("op-two").value);
 // { in case of parameter addition do addition, in case of parameter subtraction....}
 //
 function calc(calculationTypeIs) {
+    var operatorOne = Number(document.getElementById("op-one").value);
+    var operatorTwo = Number(document.getElementById("op-two").value);
     switch (calculationTypeIs) {
+
         case 'addition':
             alert(operatorOne + operatorTwo);
             break;
@@ -45,7 +47,6 @@ function calc(calculationTypeIs) {
             break;
         case 'division':
             alert(operatorOne / operatorTwo);
-        default:
             break;
     }
 }
