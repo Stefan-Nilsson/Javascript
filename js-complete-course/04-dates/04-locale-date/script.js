@@ -20,10 +20,28 @@
     const currentYear = current.getFullYear();
     const currentHour = current.getHours();
     const currentMinutes = current.getMinutes();
-    const currentHourPlusMinutes = ((currentHour) + ("h") + (currentMinutes))
-    const allDataNicelyPut = ((currentDay) + " " + (currentDate) + " " + (currentMonth) + " " + (currentYear) + " " + (currentHourPlusMinutes));
-    document.getElementById("target").innerHTML = allDataNicelyPut;
-    /* 
+    const currentHourPlusMinutes = ((currentHour) + ("h") + (currentMinutes));
+
+    var weekdays = new Array(7);
+    weekdays[0] = "Sunday";
+    weekdays[1] = "Monday";
+    weekdays[2] = "Tuesday";
+    weekdays[3] = "Wednesday";
+    weekdays[4] = "Thursday";
+    weekdays[5] = "Friday";
+    weekdays[6] = "Saturday";
+    let textDay;
+    textDay = weekdays[current.getDay()];
+
+    
+
+
+        const allDataNicelyPut = ((textDay) + " " + (currentDate) + " " + (currentMonth) + " " + (currentYear) + " " + (currentHourPlusMinutes));
+        document.getElementById("target").innerHTML = allDataNicelyPut;
+
+
+
+    /*
     Change the content of the indicated tag
     by the date of today, in English
     (ex : Sunday 28 October 2018, 23h32).
