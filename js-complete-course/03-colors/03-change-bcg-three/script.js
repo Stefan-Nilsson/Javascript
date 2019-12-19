@@ -16,7 +16,10 @@
 
         // document.body.style.background =
         // Random string generator
-
+        // .floor(hierin de zaken waar de bodem voor geldt) dient om komma getallen te voorkomen
+        // .random(getal tussen 0 en 1) dient om een random getal tussen 0 en 1 te maken
+        // .random() * 255 zegt dat de randomness naar 255 wordt gezet ipv 1
+        // maw een random getal tussen 0 en 255
         let a = Math.floor(Math.random() * 255);
         let b = Math.floor(Math.random() * 255);
         let c = Math.floor(Math.random() * 255);
