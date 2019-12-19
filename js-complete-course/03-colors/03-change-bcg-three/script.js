@@ -24,7 +24,7 @@
 
             document.body.style.background = (a)(",")(b)(",")(c);
             
-            console.log((a)(",")(b)(",")(c));
+            console.log(a(",")b(",")c);
 
     });
 
