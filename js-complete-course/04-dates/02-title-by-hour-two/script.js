@@ -12,7 +12,26 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    // creating the extra if of (hours<17) fixed my problem, took some time but i found it
 
-    // your code here
+    var current= new Date();
+
+    var hours=current.getHours();
+    var minutes=current.getMinutes();
+    if (hours<17) {
+        document.getElementById("target").innerHTML = "Hello";}
+
+    else if ((hours <= 17) && (minutes<=30)) {
+        document.getElementById("target").innerHTML = "Hello";}
+
+    else
+        document.getElementById("target").innerHTML = "Good evening";
+
+    // used this for testing out the statements
+    console.log(new Date);
+    console.log(current.getHours());
+    console.log(current.getMinutes());
 
 })();
+
+
