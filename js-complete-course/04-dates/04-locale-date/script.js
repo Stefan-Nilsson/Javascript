@@ -31,13 +31,30 @@
     weekdays[5] = "Friday";
     weekdays[6] = "Saturday";
     let textDay;
-    textDay = weekdays[current.getDay()];
-
-    
+    textDay = weekdays[currentDay];
 
 
-        const allDataNicelyPut = ((textDay) + " " + (currentDate) + " " + (currentMonth) + " " + (currentYear) + " " + (currentHourPlusMinutes));
-        document.getElementById("target").innerHTML = allDataNicelyPut;
+
+// create an array
+    var monthsArr = new Array(12);
+// store month names into our array
+    monthsArr[0] = "January";
+    monthsArr[1] = "February";
+    monthsArr[2] = "March";
+    monthsArr[3] = "April";
+    monthsArr[4] = "May";
+    monthsArr[5] = "June";
+    monthsArr[6] = "July";
+    monthsArr[7] = "August";
+    monthsArr[8] = "September";
+    monthsArr[9] = "October";
+    monthsArr[10] = "November";
+    monthsArr[11] = "December";
+    textMonth = monthsArr[currentMonth];
+
+
+
+    document.getElementById("target").innerHTML = ((textDay) + " " + (currentDate) + " " + (textMonth) + " " + (currentYear) + " " + (currentHourPlusMinutes));
 
 
 
