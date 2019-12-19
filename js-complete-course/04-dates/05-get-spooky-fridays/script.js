@@ -25,18 +25,31 @@
     document.getElementById("run").addEventListener("click",function () {
 
 
-        const current = new Date();
-        let currentDay = current.getDay();
-        let currentDate = current.getDate();
-        let currentMonth = current.getMonth();
         let chosenYear = (document.getElementById("year"));
+        let currentDay = chosenYear.getDay();
+        let currentDate = chosenYear.getDate();
+        let currentMonth = chosenYear.getMonth();
+
 
         if (chosenYear) {
             for (chosenYear; chosenYear; chosenYear) {
                 for (currentMonth = 1; currentMonth === 12; currentMonth++) {
-                    if ((currentDay = 5) && (currentDate = 13)) {
-                        alert("ITS FRIDAY BABY")
-                    }
+                   for (currentDate= 1; currentDate === 31; currentDate++) {
+                       for (currentDay= 1; currentDay === 6; currentDay++) {
+                          if ((currentDay = 5) && (currentDate = 13)) {
+                               alert("ITS FRIDAY BABY")
+                           }
+                       }
+                   }
+
+
+
+
+
+
+                    //
+                     //
+                  //
                 }
 
             }
