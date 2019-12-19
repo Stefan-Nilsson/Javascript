@@ -25,14 +25,28 @@
     document.getElementById("run").addEventListener("click",function () {
 
 
+        //let chosenYear;
+       // chosenYear = (document.getElementById("year").value);
+       // new Date(chosenYear);
+       // let currentDay = Date.getDay();
+        // let currentDate = Date.getDate();
+        // let currentMonth;
+        // currentMonth = Date.getMonth();
+
+
+
+
+
+
+
+
+
+
         let chosenYear;
-        chosenYear = (document.getElementById("year").value);
-        new Date(chosenYear);
-        let currentDay = chosenYear.getDay();
-        let currentDate = chosenYear.getDate();
-        let currentMonth = chosenYear.getMonth();
+        chosenYear.setFullYear(document.getElementById("year").value);
+        console.log(Date)
 
-
+/*
         if (chosenYear) {
             for (chosenYear; chosenYear; chosenYear) {
                 for (currentMonth = 1; currentMonth === 12; currentMonth++) {
@@ -66,6 +80,6 @@
 
             // niet op letten  for (i=1;i<=31;i++) {
 
-        }
+       // }
     })
 })();
