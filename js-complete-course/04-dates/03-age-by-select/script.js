@@ -12,13 +12,15 @@
 (function () {
 
     // your code here
-    document.getElementById("dob-year").addEventListener(click), function() {
-      let birthYear = (Number(document.getElementById("dob-year").value));
-      let currentYear = (Number("getFullYear()"));
+    document.getElementById("run").addEventListener("click", function() {
+      const birthYear = (document.getElementById("dob-year").value);
+      const current= new Date();
+      const currentYear = current.getFullYear();
 
-      
+      let currentAge = (currentYear - birthYear);
+      alert (currentAge);
 
 
-    }
+    })
 
 })();
