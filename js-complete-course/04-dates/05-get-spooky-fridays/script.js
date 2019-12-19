@@ -17,15 +17,13 @@
         const event = new Date('2019');
 
         event.setFullYear(document.getElementById("year").value);
+        event.setMonth(1);
+        event.setDate(1);
 
         console.log(event.getFullYear());
-// expected output: 1969
-
-        event.setFullYear(0);
-
-        console.log(event.getFullYear());
-// expected output: 0
-
+        console.log(event.getDay());
+        console.log(event.getMonth());
+        console.log(event.getDate());
 
 
     })
