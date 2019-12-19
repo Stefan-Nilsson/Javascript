@@ -12,6 +12,23 @@
 (function() {
 
 
+    document.getElementById("run").addEventListener("click",function () {
+
+        const event = new Date(document.getElementById("year"));
+        console.log(event)
+
+
+
+    })
+})();
+
+
+
+
+
+
+
+
 /* tot nu bezig geweest met logica te onderzoeken van de for loop
  op:
  https://medium.com/@omarshishanischool/how-does-a-javascript-for-loop-work-85d2c5d879c8
@@ -19,34 +36,23 @@
 
  Iets in de aard van:
 (hier jaartal waarin de code moet werken)
- */
-
-
-    document.getElementById("run").addEventListener("click",function () {
-
-
-        //let chosenYear;
-       // chosenYear = (document.getElementById("year").value);
-       // new Date(chosenYear);
-       // let currentDay = Date.getDay();
-        // let currentDate = Date.getDate();
-        // let currentMonth;
-        // currentMonth = Date.getMonth();
 
 
 
+let chosenYear;
+chosenYear = (document.getElementById("year").value);
+new Date(chosenYear);
+let currentDay = Date.getDay();
+let currentDate = Date.getDate();
+let currentMonth;
+currentMonth = Date.getMonth();
 
 
+let chosenYear;
+chosenYear.setFullYear(document.getElementById("year").value);
+console.log(Date)
 
 
-
-
-
-        let chosenYear;
-        chosenYear.setFullYear(document.getElementById("year").value);
-        console.log(Date)
-
-/*
         if (chosenYear) {
             for (chosenYear; chosenYear; chosenYear) {
                 for (currentMonth = 1; currentMonth === 12; currentMonth++) {
@@ -63,9 +69,7 @@
 
 
 
-                    //
-                     //
-                  //
+
                 }
 
             }
@@ -75,11 +79,11 @@
             When you click the button,
             display each month of the specified year
             that has a Friday 13th.
-             */
 
 
-            // niet op letten  for (i=1;i<=31;i++) {
 
-       // }
-    })
-})();
+niet op letten  for (i=1;i<=31;i++) {
+
+}
+
+ */
