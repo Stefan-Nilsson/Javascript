@@ -22,7 +22,10 @@
     const currentMinutes = current.getMinutes();
     const currentHourPlusMinutes = ((currentHour) + ("h") + (currentMinutes));
 
+
+         // create an array
     var weekdays = new Array(7);
+        // store day names into our array
     weekdays[0] = "Sunday";
     weekdays[1] = "Monday";
     weekdays[2] = "Tuesday";
@@ -30,14 +33,13 @@
     weekdays[4] = "Thursday";
     weekdays[5] = "Friday";
     weekdays[6] = "Saturday";
-    let textDay;
-    textDay = weekdays[currentDay];
+    let textDay = weekdays[currentDay];
 
 
 
-// create an array
+         // create an array
     var monthsArr = new Array(12);
-// store month names into our array
+        // store month names into our array
     monthsArr[0] = "January";
     monthsArr[1] = "February";
     monthsArr[2] = "March";
@@ -50,7 +52,7 @@
     monthsArr[9] = "October";
     monthsArr[10] = "November";
     monthsArr[11] = "December";
-    textMonth = monthsArr[currentMonth];
+    let textMonth = monthsArr[currentMonth];
 
 
 
