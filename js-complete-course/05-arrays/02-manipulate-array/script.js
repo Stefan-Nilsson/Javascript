@@ -24,6 +24,7 @@
         "cerise",
     ];
 
-    // your code here
-
+   fruits[0] = ("banana");
+    fruits[9] = ("kiwi");
+    console.log(fruits);
 })();
