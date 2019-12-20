@@ -89,6 +89,14 @@
         },
     ];
 
-    // your code here
+
+    people.forEach(function(azaz) {
+        if (azaz.firstname == ("Jean") && azaz.lastname == ("Dupont")) {
+        console.log(azaz.firstname + " " + azaz.lastname + " "  + azaz.email);}
+
+
+
+    });
+
 
 })();
