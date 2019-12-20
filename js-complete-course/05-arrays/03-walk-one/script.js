@@ -28,10 +28,9 @@
         "cherry",
     ];
         // .length geeft de lengte van de array weer als value
-    for (i=0;i<fruits.length;i++);{
+    for (i=0;i<fruits.length;i++) {
         console.log(fruits[i]);
     }
-    
 
 });
 
