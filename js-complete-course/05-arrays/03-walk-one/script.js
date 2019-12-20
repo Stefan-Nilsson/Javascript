@@ -9,7 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function() { document.getElementById("run").addEventListener("click",function(){
+
+
 
     var fruits = [
         "apple",
@@ -25,7 +27,14 @@
         "grap",
         "cherry",
     ];
+        // .length geeft de lengte van de array weer als value
+    for (i=0;i<fruits.length;i++);{
+        console.log(fruits[i]);
+    }
+    
 
-    // your code here
+});
+
+
 
 })();
