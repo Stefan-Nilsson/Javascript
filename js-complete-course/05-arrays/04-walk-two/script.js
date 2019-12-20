@@ -26,6 +26,11 @@
         "cerise",
     ];
 
-    // your code here
+    fruits.forEach(myFunction);
 
 })();
+
+
+function myFunction(item, index) {
+    console.log(index + " " + item);
+}
