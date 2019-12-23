@@ -17,18 +17,40 @@
         var rngArray = Array.from({length: 10}, () => Math.floor(Math.random() * 100));
 
 
-        for (i = 1; rngArray.length; i++)
-            (document.getElementById(`n-${i}`).innerHTML) = rngArray[i - 1];
+
+
+        Array.min = function( array ){
+            return Math.min.apply( Math, rngArray );
+        };
+
+            var minimum = Array.min(rngArray);
+
+            document.getElementById("min").innerHTML = minimum;
+
+        Array.min = function( array ){
+            return Math.min.apply( Math, rngArray );
+        };
+
+        var minimum = Array.min(rngArray);
+
+        document.getElementById("max").innerHTML = minimum;
+
+
+        for (i = 1; rngArray.length; i++){
+            document.getElementById(`n-${i}`).innerHTML = rngArray[i-1];
+
+        }
 
 
 
-
-        document.getElementById("min").innerHTML =  rngArray.reduce((bestIndexSoFar, currentlyTestedValue, currentlyTestedIndex, array) => currentlyTestedValue > array[bestIndexSoFar] ? currentlyTestedIndex : bestIndexSoFar, 0);
     });
 
 
 })();
 
+
+
+//  document.getElementById("min").innerHTML = Array.reduce((bestIndexSoFar, currentlyTestedValue, currentlyTestedIndex, array) => currentlyTestedValue > array[bestIndexSoFar] ? currentlyTestedIndex : bestIndexSoFar, 0);
 
 //document.getElementById("min").innerHTML = rngArray.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
 
