@@ -27,16 +27,23 @@
 
             document.getElementById("min").innerHTML = minimum;
 
-        Array.min = function( array ){
-            return Math.min.apply( Math, rngArray );
+        Array.max = function( array ){
+            return Math.max.apply( Math, rngArray );
         };
 
-        var minimum = Array.min(rngArray);
+        var maximum = Array.max(rngArray);
 
-        document.getElementById("max").innerHTML = minimum;
+        document.getElementById("max").innerHTML = maximum;
 
 
-        for (i = 1; rngArray.length; i++){
+        document.getElementById("sum").innerHTML = rngArray.reduce((a, b) => a + b, 0);
+
+
+        document.getElementById("average").innerHTML = rngArray.reduce( ( p, c ) => p + c, 0 ) / rngArray.length;
+
+
+
+        for (let i = 1; rngArray.length; i++){
             document.getElementById(`n-${i}`).innerHTML = rngArray[i-1];
 
         }
