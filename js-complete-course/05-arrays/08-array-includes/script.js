@@ -12,20 +12,51 @@
 (function() {
 
     var fruits = [
-        "apple",
+        "lol",
         "perry",
         "strawberry",
         "tomato",
-        "kiwi",
+        "nononono",
         "banana",
         "orange",
         "mandarin",
         "durian",
         "peach",
         "grapes",
-        "cherry",
+        "apple",
     ];
 
-    // your code here
+document.getElementById("run").addEventListener("click",function f() {
+        for (var i=0;i<fruits.length;i++) {
+            if (fruits[i] != ('apple')) {
+                console.log("no" + i);
+            } else {
+                console.log("yes");
+            }
+    }
+
+});
+
+
+
+/*
+
+    for (i=0;i<12;i++) {if ([0]) {
+        console.log("yes");
+    }
+    else console.log("no");
+
+
+    }
+    */
+
+/*
+    if ([0]) {
+        console.log("yes");
+    }
+    else if ([1,2,3,4,5,6,7,8,9,10]) {console.log("no");}
+
+    else console.log("try out")
+*/
 
 })();
