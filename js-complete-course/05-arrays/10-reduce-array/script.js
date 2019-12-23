@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {  document.getElementById("run").addEventListener("click", function () {
-
+    //document.getElementById("sum").innerHTML =
     var people = [
         {
             firstname: "Grenville",
@@ -89,9 +89,8 @@
         },
     ];
 
-    //document.getElementById("sum").innerHTML =
-   
-   console.log(people.reduce((a, b) => a + b, 0))
+    var newPeople = people.reduce((a, {age}) => a + {age}, 0);
+    console.log(newPeople);
 
 });
 
