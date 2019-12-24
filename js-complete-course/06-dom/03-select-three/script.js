@@ -11,6 +11,7 @@
 
 (function() {
 
-    // your code here
+    let elementsClass = document.getElementsByClassName("target.");
 
+    let res = elementsClass.replace("owned");
 })();
