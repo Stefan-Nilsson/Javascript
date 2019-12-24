@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {  document.getElementById("run").addEventListener("click", function () {
-    //document.getElementById("sum").innerHTML =
-    var people = [
+(function() {
+    let people;
+    people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -85,11 +85,12 @@
         {
             firstname: "Jo-ann",
             lastname: "Sacase",
-            age: 81,
+            age: 81
         },
     ];
+    document.getElementById("run").addEventListener("click", function () {
+    const newPeople = (people.reduce((a , b) => a + b.age, 0));
 
-    var newPeople = people.reduce((a, {age}) => a + {age}, 0);
     console.log(newPeople);
 
 });
