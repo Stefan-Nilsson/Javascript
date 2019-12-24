@@ -29,18 +29,67 @@
     ];
 
     // Find duplicates using for loop
-    let item_list = [fruits];
-
-    let duplicate = item_list.reduce((acc,currentValue,index, array) => {
-
-        for (i=0;fruits.length; i++) {}
 
 
+    document.getElementById("run").addEventListener("click",function () {
 
-      //  if(fruits.indexOf(currentValue)!==index && !acc.includes(currentValue)) acc.push(currentValue);
-        // acc;
+
+        let unique = [...new Set(fruits)];
+        console.log(unique);
+
+
+
+
+    })
+})();
+
+
+/*
+
+try out 1
+      let item_list = [fruits];
+
+  let duplicate = item_list.reduce((acc,currentValue,index, array) => {
+        if(array.indexOf(currentValue)!==index && !acc.includes(currentValue)) acc.push(currentValue);
+        return acc;
     }, []);
 
     console.log('Duplicate items are ' + duplicate.join(','));
 
-})();
+
+try out 2
+  function unite(...data) {
+            return [].concat.apply([], data).reduce((result, current) => {
+                return ~result.indexOf(current)
+                    ? result
+                    : result.concat(current)
+            }, []);
+   console.log(unite([1,2,3], [1, 4, 4, 5, 6]));
+
+
+    Other options found @ https://wsvincent.com/javascript-remove-duplicates-array/
+    Another option is to use filter().
+
+const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
+
+let x = (names) => names.filter((v,i) => names.indexOf(v) === i)
+x(names); // 'John', 'Paul', 'George', 'Ringo'
+
+And finally we can use forEach().
+
+const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
+
+function removeDups(names) {
+  let unique = {};
+  names.forEach(function(i) {
+    if(!unique[i]) {
+      unique[i] = true;
+    }
+  });
+  return Object.keys(unique);
+}
+
+removeDups(names); // // 'John', 'Paul', 'George', 'Ringo'
+
+
+   */
