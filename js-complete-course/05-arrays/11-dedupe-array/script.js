@@ -28,6 +28,19 @@
         "cerise",
     ];
 
-    // your code here
+    // Find duplicates using for loop
+    let item_list = [fruits];
+
+    let duplicate = item_list.reduce((acc,currentValue,index, array) => {
+
+        for (i=0;fruits.length; i++) {}
+
+
+
+      //  if(fruits.indexOf(currentValue)!==index && !acc.includes(currentValue)) acc.push(currentValue);
+        // acc;
+    }, []);
+
+    console.log('Duplicate items are ' + duplicate.join(','));
 
 })();
