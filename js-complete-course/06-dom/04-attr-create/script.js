@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+   let imgUsed = document.createElement("img");
+   console.log(imgUsed);
+   imgUsed.src = document.getElementById("source").getAttribute("data-image");
+   document.getElementById("target").append(imgUsed);
+   document.getElementById("source").remove();
+
+
+
+
 
 })();
