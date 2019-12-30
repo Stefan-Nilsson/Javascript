@@ -11,7 +11,13 @@
 
 (function() {
 
-    let elementsClass = document.getElementsByClassName("target.");
+    // this makes a variable that consists of an ARRAY containing all the "target" classes
+   const targetClass = document.querySelectorAll(".target");
+    console.log(targetClass);
 
-    let res = elementsClass.replace("owned");
+
+    for (var i = 0; i < targetClass.length; i++) {
+        targetClass[i].innerHTML = "new content";
+    }
+
 })();
