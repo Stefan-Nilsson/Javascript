@@ -18,7 +18,32 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
+    console.log(gallery);
 
-    // your code here
+  //  let imgUsed = document.getElementsByTagName("img")[0];
+    // console.log(imgUsed);
+    let i = 0;
+    document.getElementById("next").addEventListener("click", function () {
+        console.log(gallery[i]);
+    if (i < 5) {
+
+        document.querySelector("img").setAttribute("src", gallery[i] );
+        i++;
+
+    }
+    else {i = 0}
+
+        });
 
 })();
+
+/*
+if ([imgUsed].length <= [5]) {
+    imgUsed = imgUsed + 1
+}
+
+
+
+
+
+ */
