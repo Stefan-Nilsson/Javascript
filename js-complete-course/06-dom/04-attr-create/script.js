@@ -11,10 +11,15 @@
 
 (function() {
 
+    //create img element
    let imgUsed = document.createElement("img");
+   //check if img element is there, see how it looks like, as in: what dit the previous line of code just do?
    console.log(imgUsed);
+   //add the source to the newly created img element, first source Id, second data img Attribute
    imgUsed.src = document.getElementById("source").getAttribute("data-image");
+   //put imgUsed inside of the target Id
    document.getElementById("target").append(imgUsed);
+   //remove the span/source Id
    document.getElementById("source").remove();
 
 
