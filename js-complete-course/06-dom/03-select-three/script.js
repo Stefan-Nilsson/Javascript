@@ -15,7 +15,8 @@
    const targetClass = document.querySelectorAll(".target");
     console.log(targetClass);
 
-
+    // this loops through the Array, starting at the first one (= 0) and going through the entire length of the Array
+    // every time it loops through it adds one to the var i (i++)
     for (var i = 0; i < targetClass.length; i++) {
         targetClass[i].innerHTML = "new content";
     }
