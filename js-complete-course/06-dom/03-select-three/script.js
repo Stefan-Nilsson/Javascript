@@ -11,7 +11,7 @@
 
 (function() {
 
-    // this makes a variable that consists of an ARRAY containing all the "target" classes
+    // this makes a variable that consists of an array containing all the "target" classes
    const targetClass = document.querySelectorAll(".target");
     console.log(targetClass);
 
