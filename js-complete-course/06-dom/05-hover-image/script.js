@@ -9,8 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+
+    // create var for the img tag/element
+    let imgUsed = document.getElementsByTagName("img")[0];
+
+    // hover effect
+    imgUsed.addEventListener("mouseover", function () {
+        imgUsed.setAttribute("src", "../../_shared/img/kiss-wink-heart.svg");
+    // now it has to change back to the original img
+     imgUsed.addEventListener("mouseout", function () {
+         imgUsed.setAttribute("src","../../_shared/img/kiss.svg")
+
+     })
+
+    });
+
 
 })();
