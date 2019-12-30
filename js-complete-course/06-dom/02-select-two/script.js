@@ -11,6 +11,9 @@
 
 (function() {
 
-    target.innerHTML = ("owned")
+   document.querySelector("#target").innerHTML = ("owned")
 
 })();
+
+
+// alternative: target.innerHTML = ("owned")
