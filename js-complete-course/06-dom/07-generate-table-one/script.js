@@ -21,14 +21,14 @@
     myArray[6] = 9;
     myArray[7] = 10;
 
-    var myTable= "<table><tr><td style='width: 100px; color: red;'>10</td>";
+    var myTable= "<table><tr><td style='width: 100px;'>Number 1 is:</td>";
 
 
-    myTable+="<tr><td style='width: 100px;                   '>9</td>";
+    myTable+="<tr><td style='width: 100px;                   '>Number 2 is:</td>";
 
 
     for (var i=0; i<8; i++) {
-        myTable+="<tr><td style='width: 100px;'>Number " + i + " is:</td>";
+        myTable+="<tr><td style='width: 100px;'>Number " + (i + 3) + " is:</td>";
         myArray[i] = myArray[i].toFixed(3);
 
 
