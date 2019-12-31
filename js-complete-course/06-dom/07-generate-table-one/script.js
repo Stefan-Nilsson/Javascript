@@ -11,6 +11,33 @@
 
 (function() {
 
-    // your code here
+    var myArray    = new Array();
+    myArray[0] = 3;
+    myArray[1] = 4;
+    myArray[2] = 5;
+    myArray[3] = 6;
+    myArray[4] = 7;
+    myArray[5] = 8;
+    myArray[6] = 9;
+    myArray[7] = 10;
+
+    var myTable= "<table><tr><td style='width: 100px; color: red;'>10</td>";
+
+
+    myTable+="<tr><td style='width: 100px;                   '>9</td>";
+
+
+    for (var i=0; i<8; i++) {
+        myTable+="<tr><td style='width: 100px;'>Number " + i + " is:</td>";
+        myArray[i] = myArray[i].toFixed(3);
+
+
+    }
+    myTable+="</table>";
+
+    document.getElementById('target').innerHTML = myTable;
+
+   // document.write( myTable);
+
 
 })();
