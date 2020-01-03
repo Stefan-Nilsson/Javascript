@@ -16,11 +16,6 @@
     */
     let textToUse = document.querySelector("#target").innerText;
     console.log(textToUse);
-    /*
-     Create an array by using the split function, "" means split after every letter this creates 215 array elements
-    */
-    // let textToUseArray = textToUse.split("");
-    // console.log(textToUseArray);
     document.querySelector("#target")["innerHTML"] = "";
     //console.log(textToUse);
 
@@ -42,6 +37,12 @@
 
 
     /*
+
+     Create an array by using the split function, "" means split after every letter this creates 215 array elements
+
+     let textToUseArray = textToUse.split("");
+    console.log(textToUseArray);
+
      let i = 0;
 
 
