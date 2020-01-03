@@ -11,6 +11,23 @@
 
 (function() {
 
-    // your code here
+    let numberText = document.querySelector("#target");
+    let numberSlider = document.querySelector("#slider");
+
+    numberText.value = numberSlider.value;
+
+    console.log(numberText.value);
+
+    numberSlider.addEventListener("mouseup", function () {
+        console.log(numberSlider.value);
+    numberText.innerHTML = numberSlider.value;
+
+
+
+
+    })
+
+    // voor in de toekomst: maak een while.for loopish ding dat continu
+    // de nummerverandering aangeeft met een mousedown event
 
 })();
