@@ -11,21 +11,45 @@
 
 (function() {
 
-    var numberOne = 460;
-    var numberTwo = 0;
-    var numberThree = 0;
-    var numberFour = 0;
-    var number1Text = "460";
-    var number2Text = "00";
-    var number3Text = "00";
-    var number4Text = "00";
 
+    var targetTarget = document.getElementsByTagName("target");
+    targetTarget.innerHTML = "";
     var speed = 100;
     var speed2 = 80;
-    var setSpeedandRng = setInterval(rngesus, speed);
+    var setSpeedAndRng = setInterval(rngesus, speed);
     var setSpeedAndRng2 = setInterval(rngesus2, speed2);
     var setSpeedAndRng3 = setInterval(rngesus3, speed2);
     var setSpeedAndRng4 = setInterval(rngesus4, speed2);
+    let numberClicker1 = document.querySelector("#part-one");
+    let numberClicker2 = document.querySelector("#part-two");
+    let numberClicker3 = document.querySelector("#part-three");
+    let numberClicker4 = document.querySelector("#part-four");
+    let inputVar = document.querySelectorAll("button");
+
+    inputVar.forEach(function (datam) {
+        datam.addEventListener("click", function () {
+            console.log(datam.id);
+            switch (this.id) {
+                case "fix-part-one": clearInterval(setSpeedAndRng);
+                console.log(parseInt(numberClicker1.value));
+                targetTarget.innerHTML = numberClicker1.value + numberClicker2.value + numberClicker3.value + numberClicker4.value;
+                break;
+                case "fix-part-two":  clearInterval(setSpeedAndRng2);
+                    targetTarget.innerHTML = numberClicker1.innerHTML + numberClicker2 + numberClicker3 + numberClicker4;
+                break;
+                case "fix-part-three": clearInterval(setSpeedAndRng3);
+                    document.getElementsByTagName("target").innerHTML = numberClicker1.innerHTML + numberClicker2 + numberClicker3 + numberClicker4;
+                break;
+                case "fix-part-four":  clearInterval(setSpeedAndRng4);
+                    document.getElementsByTagName("target").innerHTML = numberClicker1.innerHTML + numberClicker2 + numberClicker3 + numberClicker4;
+
+
+
+            }
+        })
+
+
+    });
 
     function rngesus () {
         var rngOne = Math.floor(Math.random() * (499 - 460) + 460);
@@ -45,7 +69,7 @@
     }
 
     let buttonClassOne = document.querySelectorAll(".button");
-    document.getElementById("target").innerHTML = 460000000;
+    document.getElementsByTagName("input").innerHTML = 460000000;
     buttonClassOne.forEach(function (button) {
         buttonClassOne.addEventListener("click", function () {
 
