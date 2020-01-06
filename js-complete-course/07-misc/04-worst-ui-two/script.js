@@ -46,7 +46,7 @@ console.log(numberClicker1.innerHTML);
     numberClicker2.addEventListener("mouseup",function () {
         // numberTarget.innerHTML = numberTarget++;
 
-        console.log(numberClicker2.innerText)
+        console.log(numberClicker2.innerText);
 
         let varTest2 = (parseInt(numberClicker2.innerText++));
         // let varTest1 = (parseInt(numberClicker1.innerHTML++));
