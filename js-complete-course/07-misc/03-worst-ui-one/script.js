@@ -20,7 +20,7 @@
 
     numberSlider.addEventListener("mouseup", function () {
         console.log(numberSlider.value);
-    numberText.innerHTML = numberSlider.value;
+    numberText.innerHTML = "0" + numberSlider.value;
 
 
 
