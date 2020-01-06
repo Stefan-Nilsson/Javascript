@@ -11,6 +11,62 @@
 
 (function() {
 
-    // your code here
+    let numberTarget = document.querySelector("#target").innerText;
+    let numberClicker1 = document.querySelector("#part-one");
+    let numberClicker2 = document.querySelector("#part-two");
+    let numberClicker3 = document.querySelector("#part-three");
+    let numberClicker4 = document.querySelector("#part-four");
+
+
+
+
+
+
+
+
+
+  numberClicker1.addEventListener("mouseup",function () {
+    // numberTarget.innerHTML = numberTarget++;
+
+      let varTest = (parseInt(numberClicker1.innerText++));
+
+      if (varTest >= 498) {
+          numberClicker1 = 460;
+
+      }
+      //numberClicker1.innerHTML = numberSlider.value;
+  });
+
+    numberClicker2.addEventListener("mouseup",function () {
+        // numberTarget.innerHTML = numberTarget++;
+
+        console.log(numberClicker2.innerText)
+
+    });
+
+    numberClicker3.addEventListener("mouseup",function () {
+        // numberTarget.innerHTML = numberTarget++;
+
+        console.log(numberClicker3.innerText)
+
+    });
+
+    numberClicker4.addEventListener("mouseup",function () {
+        // numberTarget.innerHTML = numberTarget++;
+
+        console.log(numberClicker4.innerText)
+
+    })
+
 
 })();
+
+
+/*
+   console.log(numberTarget);
+  let arrayTarget =  numberTarget.split("+");
+   console.log(arrayTarget);
+   let rightTarget = arrayTarget[1];
+  let parseTarget = parseInt(rightTarget);
+   console.log(parseTarget);
+*/
