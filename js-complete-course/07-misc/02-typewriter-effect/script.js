@@ -20,7 +20,7 @@
     //console.log(textToUse);
 
 
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    var speed = Math.floor(Math.random() * 350); /* The speed/duration of the effect in milliseconds */
     typeWriter(0);
     function typeWriter(i) {
 
@@ -30,7 +30,7 @@
             setTimeout(function(){
                 typeWriter(i);
             }, speed);
-
+// verander speed naar random speed
         }
 
     }
