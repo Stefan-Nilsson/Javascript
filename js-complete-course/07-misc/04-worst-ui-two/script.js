@@ -11,7 +11,7 @@
 
 (function() {
 
-    let numberTarget = document.querySelector("#target").innerText;
+    let numberTarget = document.querySelector("#target").innerHTML;
     let numberClicker1 = document.querySelector("#part-one");
     let numberClicker2 = document.querySelector("#part-two");
     let numberClicker3 = document.querySelector("#part-three");
@@ -29,10 +29,15 @@
     // numberTarget.innerHTML = numberTarget++;
 
       let varTest = (parseInt(numberClicker1.innerText++));
-
+      // let varTest1 = (parseInt(numberClicker1.innerHTML++));
+      numberTarget = numberClicker1.toString + numberClicker2.toString + numberClicker3.toString + numberClicker4.toString;
       if (varTest >= 498) {
-          numberClicker1 = 460;
+          numberClicker1.innerText = 460;
 
+
+      // if (varTest1 >= 498) {
+        //  numberClicker1.innerHTML = 460;
+     // }
       }
       //numberClicker1.innerHTML = numberSlider.value;
   });
@@ -42,22 +47,59 @@
 
         console.log(numberClicker2.innerText)
 
-    });
+        let varTest2 = (parseInt(numberClicker2.innerText++));
+        // let varTest1 = (parseInt(numberClicker1.innerHTML++));
+        numberTarget = numberClicker1.toString + numberClicker2.toString + numberClicker3.toString + numberClicker4.toString;
+        if (varTest2 === "00") {
+            console.log("continue")
+        }
+        else if (varTest2 < 9) {
+            numberClicker2.innerText = "0" + numberClicker2.innerText;
+        }
+         else if (varTest2 >= 99)  {
+            numberClicker2.innerText = "00"
+
+        }
+        });
 
     numberClicker3.addEventListener("mouseup",function () {
         // numberTarget.innerHTML = numberTarget++;
 
-        console.log(numberClicker3.innerText)
+        console.log(numberClicker3.innerText);
+        let varTest3 = (parseInt(numberClicker3.innerText++));
+        // let varTest1 = (parseInt(numberClicker1.innerHTML++));
+        numberTarget = numberClicker1.toString + numberClicker2.toString + numberClicker3.toString + numberClicker4.toString;
+        if (varTest3 === "00") {
+            console.log("continue")
+        }
+        else if (varTest3 < 9) {
+            numberClicker3.innerText = "0" + numberClicker3.innerText;
+        }
+        else if (varTest3 >= 99)  {
+            numberClicker3.innerText = "00"
 
-    });
+        }
+        });
 
     numberClicker4.addEventListener("mouseup",function () {
         // numberTarget.innerHTML = numberTarget++;
 
         console.log(numberClicker4.innerText)
+        let varTest4 = (parseInt(numberClicker4.innerText++));
+        // let varTest1 = (parseInt(numberClicker1.innerHTML++));
+        numberTarget = numberClicker1.toString + numberClicker2.toString + numberClicker3.toString + numberClicker4.toString;
+        if (varTest4 === "00") {
+            console.log("continue")
+        }
+        else if (varTest4 < 9) {
+            numberClicker4.innerText = "0" + numberClicker4.innerText;
+        }
+        else if (varTest4 >= 99)  {
+            numberClicker4.innerText = "00"
 
-    })
-
+        }
+        });
+    numberTarget = numberClicker1.toString + numberClicker2.toString + numberClicker3.toString + numberClicker4.toString;
 
 })();
 
