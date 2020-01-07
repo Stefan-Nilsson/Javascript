@@ -12,14 +12,14 @@
 (function() {
 
 
-    var targetTarget = document.getElementsByTagName("target");
+    let targetTarget = document.getElementsByTagName("target");
     targetTarget.innerHTML = "";
-    var speed = 100;
-    var speed2 = 80;
-    var setSpeedAndRng = setInterval(rngesus, speed);
-    var setSpeedAndRng2 = setInterval(rngesus2, speed2);
-    var setSpeedAndRng3 = setInterval(rngesus3, speed2);
-    var setSpeedAndRng4 = setInterval(rngesus4, speed2);
+    let speed = 100;
+    let speed2 = 80;
+    let setSpeedAndRng = setInterval(rngesus, speed);
+    let setSpeedAndRng2 = setInterval(rngesus2, speed2);
+    let setSpeedAndRng3 = setInterval(rngesus3, speed2);
+    let setSpeedAndRng4 = setInterval(rngesus4, speed2);
     let numberClicker1 = document.querySelector("#part-one");
     let numberClicker2 = document.querySelector("#part-two");
     let numberClicker3 = document.querySelector("#part-three");
@@ -35,14 +35,14 @@
                 targetTarget.innerHTML = numberClicker1.value + numberClicker2.value + numberClicker3.value + numberClicker4.value;
                 break;
                 case "fix-part-two":  clearInterval(setSpeedAndRng2);
-                    targetTarget.innerHTML = numberClicker1.innerHTML + numberClicker2 + numberClicker3 + numberClicker4;
-                break;
+                    console.log(parseInt(numberClicker2.value));
+                    targetTarget.innerHTML = numberClicker1.value + numberClicker2.value + numberClicker3.value + numberClicker4.value;                break;
                 case "fix-part-three": clearInterval(setSpeedAndRng3);
-                    document.getElementsByTagName("target").innerHTML = numberClicker1.innerHTML + numberClicker2 + numberClicker3 + numberClicker4;
-                break;
+                    console.log(parseInt(numberClicker3.value));
+                    targetTarget.innerHTML = numberClicker1.value + numberClicker2.value + numberClicker3.value + numberClicker4.value;                break;
                 case "fix-part-four":  clearInterval(setSpeedAndRng4);
-                    document.getElementsByTagName("target").innerHTML = numberClicker1.innerHTML + numberClicker2 + numberClicker3 + numberClicker4;
-
+                    console.log(parseInt(numberClicker4.value));
+                    targetTarget.innerHTML = numberClicker1.value + numberClicker2.value + numberClicker3.value + numberClicker4.value;
 
 
             }
