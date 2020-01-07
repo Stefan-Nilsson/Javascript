@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    let numberTarget = document.querySelector("#target");
+    let guessButton = document.getElementById("increment");
+
+    guessButton.addEventListener("click", function () {
+        numberTarget.innerText++;
+        localStorage.setItem("setClickValue", numberTarget.innerText);
+        console.log(localStorage.getItem("setClickValue"));
+        numberTarget.innerHTML = localStorage.getItem("setClickValue");
+
+    })
 
 })();
