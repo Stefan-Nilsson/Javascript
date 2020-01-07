@@ -12,7 +12,7 @@
 (function() {
 
 
-    let targetTarget = document.getElementsByTagName("target");
+    let targetTarget = document.getElementById("target");
     targetTarget.innerHTML = "";
     let speed = 100;
     let speed2 = 80;
